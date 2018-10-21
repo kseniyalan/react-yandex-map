@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './css/App.less';
 
 import Map from './Map.js';
 
@@ -18,7 +17,10 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<button onClick={this.setState.bind(this, {showMap: !this.state.showMap}, null)}>Show/hide</button>
+				<button className="map-btn" 
+					onClick={this.setState.bind(this, {showMap: !this.state.showMap}, null)}>
+					{this.state.showMap ? ('Hide map') : ('Show map')}
+				</button>
 				{this.state.showMap ? (
 					<Map>
 						<Marker lat={55.76} lon={37.64}/>

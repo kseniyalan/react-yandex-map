@@ -14,6 +14,7 @@ body {
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: @grayBg;
 }
 
 *{
@@ -34,4 +35,20 @@ body {
 .App{
 	.square(100%);
 	min-height: 100%;
+}
+
+.map-btn{
+	display: block;
+	width: 30%;
+	height: 50px;
+	font-size: 16px;
+	color: #fff;
+	.border-rad(5px);
+	background-color: @darkBlue;
+	margin: 50px auto;
+	transition: background-color 0.3s;
+}
+
+.map-btn:hover{
+	background-color: @brightBlue;
 }
