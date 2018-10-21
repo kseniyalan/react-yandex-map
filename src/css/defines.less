@@ -19,33 +19,15 @@
 	border-radius: @radius;
 }
 
-.leftBorderRad(@radius){
-	-webkit-border-radius: @radius 0 0 @radius;
-	-moz-border-radius: @radius 0 0 @radius;
-	border-radius: @radius 0 0 @radius;
-}
-
-.rightBorderRad(@radius){
-	-webkit-border-radius: 0 @radius @radius 0;
-	-moz-border-radius: 0 @radius @radius 0;
-	border-radius: 0 @radius @radius 0;
-}
-
 .leftTop(@left, @top){
 	position: absolute;
 	left: @left;
 	top: @top;
 }
 
-.rightTop(@right, @top){
-	position: absolute;
-	right: @right;
-	top: @top;
-}
-
-.noUserSelect{
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
+.centerChildren{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
